@@ -58,7 +58,7 @@ Activa cuando el usuario pida:
 - Si faltan datos o fallan endpoints, indicarlos claramente y continuar con fuentes disponibles.
 
 ## Plantilla de veredicto (ajustar)
-- Calidad de negocio: excelente/muy buena/buena.
+- Calidad de negocio: excelente/muy buena/buena/regular/mala.
 - Atractivo actual: oportunidad razonable / justa / cara.
 - Perfil apto: growth largo plazo vs conservador/income vs trading.
 - Entrada: escalonada (DCA), sizing moderado (p.ej. 2-5% portafolio growth), checkpoints trimestrales, alertas de reducción.
