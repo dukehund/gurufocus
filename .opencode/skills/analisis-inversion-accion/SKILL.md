@@ -1,6 +1,6 @@
 ---
 name: analisis-inversion-accion
-description: Use this skill when the user asks to evaluate a stock or company for investment (comprar, invertir, evaluar, analizar empresa/acción/ticker). It provides a fixed research workflow using GuruFocus data and formats the report like the AVGO analysis, including a polished PDF in the current folder.
+description: Use this skill when the user asks to evaluate a stock or company for investment (comprar, invertir, evaluar, analizar empresa/acción/ticker). It provides a fixed research workflow using GuruFocus data and formats the report like the AVGO analysis.
 ---
 
 # Skill: Análisis integral de inversión de acciones (GuruFocus)
@@ -49,11 +49,7 @@ Activa cuando el usuario pida:
 
 ## Reglas de salida
 - Reporte principal en Markdown en el chat.
-- Si se solicita PDF:
-  - Generar HTML con el mismo contenido y CSS limpio (títulos, tablas, callouts).
-  - Convertir a PDF con `libreoffice --headless --convert-to pdf --outdir <carpeta_actual> <archivo>.html`.
-  - Nombre: `analisis_<TICKER>.pdf` (ej. `analisis_AVGO.pdf`).
-  - Verificar que el PDF existe y reportar tamaño/ruta.
+- Generar HTML con el mismo contenido y CSS limpio (títulos, tablas, callouts).
 - No guardar API keys en archivos/repositorio.
 - Si faltan datos o fallan endpoints, indicarlos claramente y continuar con fuentes disponibles.
 
@@ -69,4 +65,3 @@ Activa cuando el usuario pida:
 
 ## Archivos de salida esperados (carpeta actual)
 - `analisis_<TICKER>.html`
-- `analisis_<TICKER>.pdf`
